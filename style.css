@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+*{
+    margin: 0px;
+    padding: 0x;
+    box-sizing: border-box;
+    font-family: poppins,Arial, Helvetica, sans-serif;
+}
+html{scroll-behavior: smooth;}
+.logo{
+    text-transform: capitalize;
+    font-family: poppins,sans-serif;
+    letter-spacing: 3px;
+    color:white;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(22, 65, 47);
+    min-height: 6vh;
+    align-items: center;
+    position: relative;
+}
+.navit{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+
+}
+li{
+    list-style: none;
+}
+.navit a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-family: poppins,sans-serif,serif;
+}
+.ntl li{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: rgb(168, 231, 200);
+    display: none;
+}
+.navit a:hover{
+    color: rgb(29, 158, 197);
+}
+.legend img{
+    width: 50%;
+    margin-top: 5%;
+    margin-left:3% ;
+    background-color: white;
+    box-shadow: 0px 2px 8px 0px rgb(0, 0, 0);
+    border: radius 25px;
+    float: left;
+}
+.legend{
+    text-align:center;
+}
+.personaldetail{
+    margin-top: 40%;
+    text-justify: left;
+    margin-right: 3%;
+    float: right;
+    font-size: 32px;
+    line-height: 12vh;
+}
+.ularu{
+    margin-top: 75%;
+    margin-left:3%;
+    margin-right:3% ;
+    text-transform: capitalize ;
+    font-size: 32px;
+    line-height: 2em;
+    text-align: left;
+    background-color: rgb(241, 241, 232);
+    box-shadow: 0px 2px 8px 0px rgb(0, 0, 0);
+    border: radius 25px;
+}
+.pro{
+    margin-left:3%;
+    margin-right:3% ;
+    text-transform: capitalize ;
+    font-size: 32px;
+    line-height: 2em;
+    text-align: left;
+    background-color: rgb(241, 241, 232);
+    box-shadow: 0px 2px 8px 0px rgb(0, 0, 0);
+    border: radius 25px;
+}
+.proj{
+    margin-left:3%;
+    margin-right:3% ;
+    text-transform: capitalize ;
+    font-size: 32px;
+    line-height: 2em;
+    text-align: left;
+    background-color: rgb(241, 241, 232);
+    box-shadow: 0px 2px 8px 0px rgb(0, 0, 0);
+    border: radius 25px;
+    margin-bottom: 5%;
+}
+.comd a{
+    text-decoration: none;
+    color: rgb(15, 15, 1);
+}
+.comd a:hover{
+    color: tomato;
+}
+footer nav{
+    background-color: black;
+}
+.contact{
+    text-transform: capitalize;
+    font-family: poppins,sans-serif;
+    letter-spacing: 3px;
+    color:white;
+}
+.bump{
+    display: flex;
+    justify-content: space-around;
+}
+.bump img{
+    width: 30%;
+
+}
+
+@media screen and (max-width:1201px){
+    .navit{
+        width: 60%;
+    }
+    .personaldetail{
+        float: none;
+        text-align: left;
+        margin-top: 75%;
+        margin-left: 6%;
+        font-size: 100%;
+    }
+    .ularu{
+        margin-top: 10%;
+        text-align: center;
+        margin-right: 3%;
+        margin-left: 3%;
+}
+.contact{
+    text-transform: capitalize;
+    font-family: poppins,sans-serif;
+    color:white;
+}    
+
+.bump{
+    display: flex;
+    width: 3 0%;
+    justify-content: space-around;
+}
+.bump img{
+    width: 25px;
+}      
+@media screen and (max-width:780px){
+    .navit{
+        position: absolute;
+        right: 0px;
+        top: 6vh;
+        height: 94vh;
+        background-color: rgb(22, 65, 47);
+        flex-direction: column;
+        align-items: center;
+        width: 35%;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: 0.3s ease-in;
+    }
+    .ntl li{
+        display: block;
+        align-content: flex-end;
+    }
+    .personaldetail{
+        float: none;
+        text-align: left;
+        margin-top: 80%;
+        margin-left: 20%;
+        line-height: 5vh;
+
+    }
+    .legend img{
+        margin-left: 25%;
+    }
+    .ularu{
+        margin-top: 10%;
+        text-align: center;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+    .nav-active{
+            transform: translateX(0%);
+            opacity: 1;
+    }
+    .contact{
+        text-transform: capitalize;
+        font-family: poppins,sans-serif;
+        color:white;
+    }    
+   
+    .bump{
+        display: flex;
+        width: 60%;
+        justify-content: space-around;
+    }
+    .bump img{
+        width: 30%;
+    }      
+}
+@media screen and (max-width:500px){
+    .personaldetail{
+        margin-top: 85%;
+        margin-left: 0%;
+        font-size: 70%;
+    }
+
+}}
